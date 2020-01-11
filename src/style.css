@@ -19,11 +19,16 @@ h1, h2, h3, h4, h5, h6, p, li, a, span {
     -webkit-font-smoothing: antialiased;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .container {
     max-width: 1070px;
     margin: auto;
 
-    font-family: 'NanumBarunGothic';
+    font-family: 'Noto Sans KR', 'Noto Sans JP', sans-serif;
 }
 
 .container .header .profile-wrapper{
@@ -58,11 +63,11 @@ h1, h2, h3, h4, h5, h6, p, li, a, span {
 }
 
 .container .header .profile-wrapper .blog-profile > * {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .container .header .profile-wrapper .blog-profile .title {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
 }
 
@@ -104,6 +109,7 @@ h1, h2, h3, h4, h5, h6, p, li, a, span {
     width: 100%;
     height: 40px;
     pointer-events: none;
+    overflow: hidden;
 }
 
 .container .menu {
@@ -147,6 +153,7 @@ h1, h2, h3, h4, h5, h6, p, li, a, span {
     position: absolute;
     font-size: 14px;
     background: #eee;
+    display: none;
 }
 
 .container .menu .category_list .sub_category_list li {
@@ -163,21 +170,121 @@ h1, h2, h3, h4, h5, h6, p, li, a, span {
     min-height: 300px;
 }
 
-.container .sidebar-container {
+.container .content .article-wrapper {
+    padding: 25px;
+}
+
+.container .content .article-wrapper .article-head-wrapper {
     display: flex;
-    flex-wrap: wrap;
 }
 
-.container .sidebar-content {
-    flex: 0 25%;
+.container .content .article-wrapper .article-head-wrapper img {
+    height: 85px;
+    width: 85px;
 
-    height: 150px;
-    width: 260px;
+    margin-right: 10px;
 }
+
+.container .content .article-wrapper .article-head-wrapper h2 {
+    font-size: 30px;
+}
+
+.container .content .article-wrapper .article-head-wrapper h2 a {
+    display: block;
+}
+
+.container .content .article-wrapper .article-head-wrapper h2 a:hover {
+    color: #444;
+}
+
+.container .content .article-wrapper .article-head-wrapper .article-meta {
+    color: #888;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.container .content .article-wrapper .article-head-wrapper .article-meta a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container .content .article-wrapper .article-head-wrapper .article-meta a::after {
+    content: '|';
+    margin: 0 10px;
+}
+
+
+@media screen and (max-width: 1070px) {
+    .container .content .article-wrapper .article-head-wrapper h2 {
+        font-size: 20px;
+    }
+
+
+    .container .content .article-wrapper .article-head-wrapper img {
+        display: none;
+    }
+}
+
+.article-body {
+    padding: 15px 0;
+}
+
+.article-body h1,
+.article-body h2,
+.article-body h3,
+.article-body h4,
+.article-body h5,
+.article-body h6 {
+    font-weight: normal;
+    color: #ad6bb6;
+    line-height: 2.5;
+}
+
+.container .sidebar-container {
+    padding: 15px 0;
+    border-top: 1px solid #ddd;
+}
+
+@media screen and (min-width: 1070px) {
+    .container .sidebar-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .container .sidebar-content {
+        flex: 0 25%;
+    
+        height: 150px;
+        min-width: 260px;
+        padding: 0 5px;
+    }    
+}
+
+@media screen and (max-width: 1070px) {
+    .container .sidebar-container {
+        display: block;
+    }
+    
+    .container .sidebar-content {
+        display: block;
+    
+        height: 150px;
+        padding: 0 13px;
+        margin-bottom: 10px 0;
+    }
+}
+
 
 .container .sidebar-content h3{
     font-size: 20px;
     margin: 10px 0;
+}
+
+.container .sidebar-content input {
+    font-size: 15px;
+    padding: 3px 2px;
+    width: 100%;
+    display: block;
 }
 
 .container .sidebar-content .sidebar-post-title {
@@ -195,7 +302,6 @@ h1, h2, h3, h4, h5, h6, p, li, a, span {
 .container .sidebar-content .sidebar-post-title a {
     font-size: 14px;
     color: #333;
-    text-decoration: none;
 }
 
 
