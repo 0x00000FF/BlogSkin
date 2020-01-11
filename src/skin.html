@@ -13,7 +13,7 @@
         <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
         <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
         
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="./style.css" />
         <link rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/0x00000FF/BlogSkin/af933c95662528fc64cbb13d92236bf0ae3b8717/lib/nanumbarungothic/nanumbarungothicsubset.css" />
         <link rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/0x00000FF/BlogSkin/af933c95662528fc64cbb13d92236bf0ae3b8717/lib/fontawesome/css/all.css" />
     </head>
@@ -36,19 +36,82 @@
                 </div>
                 <div class="menu">[##_category_list_##]</div>
             </div>
-            <s_guest> <!--방명록-->
+            <div class="content">
+                <s_guest> <!--방명록-->
 
-            </s_guest>
-            <s_article_rep>
+                </s_guest>
+                <s_article_rep>
 
-            </s_article_rep>
-            <s_list>
+                </s_article_rep>
+                <s_list>
+                    
 
-            </s_list>
+                </s_list>
+            </div>
+            <div class="sidebar-container">
+                <s_sidebar_element>
+                    <!-- 공지사항 -->
+                    <s_rct_notice>
+                      <div class="notice">
+                        <ul>
+                          <s_rct_notice_rep>
+                            <li>
+                              <a href="[##_notice_rep_link_##]">[##_notice_rep_title_##]</a>
+                            </li>
+                          </s_rct_notice_rep>
+                        </ul>
+                      </div>
+                    </s_rct_notice>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                  <!-- 최근에 올라온 글 -->
+                  <div class="sidebar-content">
+                    <h3>최근에 올라온 글</h3>
+                    <ul>
+                      <s_rctps_rep>
+                        <li class="sidebar-post-title">
+                          <a href="[##_rctps_rep_category_link_##]">[[##_rctps_rep_category_##]]</a>
+                          <a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
+                        </li>
+                      </s_rctps_rep>
+                    </ul>
+                  </div>
+                </s_sidebar_element>
+                <s_sidebar_element>
+                    <!-- 최근에 달린 댓글 -->
+                    <div class="sidebar-content">
+                      <h3>최근에 달린 댓글</h3>
+                      <ul>
+                        <s_rctrp_rep>
+                          <li class="sidebar-post-title">
+                            <a href="[##_rctrp_rep_link_##]">[##_rctrp_rep_desc_##].</a>
+                            <span class="info_wrap">
+                              <span class="name">[##_rctrp_rep_name_##]</span>
+                            </span>
+                          </li>
+                        </s_rctrp_rep>
+                      </ul>
+                    </div>
+                </s_sidebar_element>
+            </div>
+            <div class="footer">
+                <s_sidebar_element>
+                  <!-- 방문자수 -->
+                  <div class="counter">
+                    <span class="counter-entity"><span class="counter-title">Total</span><span class="counter-data">[##_count_total_##]</span></span>
+                    <span class="counter-delimiter">|</span>
+                    <span class="counter-entity"><span class="counter-title">Today</span><span class="counter-data">[##_count_total_##]</span class="counter-data"></span>
+                    <span class="counter-delimiter">|</span>
+                    <span class="counter-entity"><span class="counter-title">Yesterday</span><span class="counter-data">[##_count_total_##]</span class="counter-data"></span>
+                  </div>
+                </s_sidebar_element>
+                
+                <p class="copyright">Copyright &copy; [##_blogger_##] 2020 All rights reserved.</p>
+                <p class="copyright">Kotoshokan Skin is designed by P.Knowledge, Licensed under MIT License</p>
+            </div>
+            <script src="./images/jquery-3.4.1.min.js"></script>
+            <script src="./images/script.js"></script>            
         </div>
-        
-        <script src="images/jquery-3.4.1.min.js"></script>
-        <script src="images/script.js"></script>
         <s_t3></s_t3>
     </body>
 </html>
