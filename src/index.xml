@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+  <information>
+    <name>소도서관 Project</name>
+    <version>1.0</version>
+    <description>
+      <![CDATA[P.노우렛지의 소도서관 Project]]>
+    </description>
+    <license>
+      <![CDATA[MIT License]]>
+    </license>
+  </information>
+  <author>
+    <name>P.노우렛지</name>
+    <homepage>https://blog.patche.me</homepage>
+    <email>knoweldge@o.cnu.ac.kr</email>
+  </author>
+  <default>
+  </default>
+</skin>

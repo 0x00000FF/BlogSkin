@@ -2,19 +2,39 @@
 <html lang="ko">
     <head>
         <meta charset="utf-8" />
+        <meta name="title" content="[##_page_title_##] :: [##_title_##]" />
+        <meta name="description" Content="[##_desc_##]" />
         <meta name="theme-color" content="#ad6bb6" />
         <meta name="keywords" content="[##_blogger_##], 개발" />
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
 
         <title>[##_page_title_##] : [##_title_##]</title>
     
-        <link rel="stylesheet" href="images/style.css" />
+        <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+        <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" />
+        
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://raw.githubusercontent.com/moonspam/NanumBarunGothic/master/nanumbarungothicsubset.css" />
+        <link rel="stylesheet" href="images/lib/fontawesome/css/all.min.css" />
     </head>
     <body id="[##_body_id_##]">
         <div class="container">
-            <div class="sidebar">
-                <s_sidebar>
-
-                </s_sidebar>
+            <div class="header">
+                <div class="profile-wrapper">
+                    <img class="blog-profile-img" src="[##_image_##]" />
+                    <div class="blog-profile">
+                        <h3 class="title">[##_title_##]</h3>
+                        <ul class="blogger">
+                            <li><span class="blogger-id">[##_blogger_##]</span></li>
+                            <li><a href="https://twitter.com/0x00000FF" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://github.com/0x00000FF" target="_blank"><i class="fab fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/kangjun-heo-7002b8171/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://stackoverflow.com/users/5079706/kangjun-heo" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>
+                        </ul>
+                        <p class="description">[##_desc_##]</p>
+                    </div>
+                </div>
+                <div class="menu">[##_category_list_##]</div>
             </div>
             <s_guest> <!--방명록-->
 
@@ -27,6 +47,10 @@
             </s_list>
         </div>
         <s_t3></s_t3>
+        
+        <!-- build:js images/script.min.js -->
+        <script src="images/lib/jquery-3.4.1.min.js"></script>
         <script src="images/script.js"></script>
+        <!-- endbuild -->
     </body>
 </html>
