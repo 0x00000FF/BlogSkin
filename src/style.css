@@ -179,6 +179,10 @@ a {
     display: flex;
 }
 
+.container .content .article-wrapper .article-head-wrapper > div {
+    margin-right: auto;
+}
+
 .container .content .article-wrapper .article-head-wrapper img {
     height: 85px;
     width: 85px;
@@ -265,7 +269,11 @@ a {
 
 .commentList li {
     list-style: none;
-    margin-bottom: 15px;
+    margin: 15px;
+}
+
+.commentList > li {
+    border-bottom: 1px #ccc solid;
 }
 
 .commentList li .reply,
