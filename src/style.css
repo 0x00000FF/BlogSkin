@@ -172,6 +172,7 @@ a {
 
 .container .content .article-wrapper {
     padding: 25px;
+    border-bottom: 1px solid #ccc;
 }
 
 .container .content .article-wrapper .article-head-wrapper {
@@ -183,6 +184,7 @@ a {
     width: 85px;
 
     margin-right: 10px;
+    border-radius: 10px;
 }
 
 .container .content .article-wrapper .article-head-wrapper h2 {
