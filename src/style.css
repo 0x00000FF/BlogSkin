@@ -203,14 +203,14 @@ a {
     margin: 10px 0;
 }
 
-.container .content .article-wrapper .article-head-wrapper .article-meta a {
-    color: inherit;
-    text-decoration: none;
+.container .content .article-wrapper .article-head-wrapper .article-meta a:nth-child(n+3)::before {
+    content: '#';
 }
 
-.container .content .article-wrapper .article-head-wrapper .article-meta a::after {
+.container .content .article-wrapper .article-head-wrapper .article-meta .date::before,
+.container .content .article-wrapper .article-head-wrapper .article-meta .date::after {
     content: '|';
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 
