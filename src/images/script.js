@@ -5,18 +5,20 @@
         return _this.children(".sub_category_list");
     }
 
+
+
     $(".category_list > li")
         .hover(
-        function () {
-            let submenu = find_sublist($(this));
-            if (!submenu) return;
+            function () {
+                let submenu = find_sublist($(this));
+                if (!submenu) return;
 
-            submenu.css("display", "block");
-        },
-        function () {
-            let submenu = find_sublist($(this));
-            if (!submenu) return;
+                submenu.css("display", "block");
+            },
+            function () {
+                let submenu = find_sublist($(this));
+                if (!submenu) return;
 
-            submenu.css("display", "none");
-        });
+                submenu.css("display", "none");
+            });
 })();
