@@ -407,6 +407,7 @@ a {
     height: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: flex;
 }
 
 .container .sidebar-content .sidebar-post-title:hover {
@@ -416,6 +417,11 @@ a {
 .container .sidebar-content .sidebar-post-title a {
     font-size: 14px;
     color: #333;
+    margin-right: auto;
+}
+
+.container .sidebar-content .sidebar-post-title span {
+    font-size: 14px;
 }
 
 
