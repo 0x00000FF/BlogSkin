@@ -220,6 +220,25 @@ a {
 }
 
 
+.container .content .paging {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.container .content .paging .no-more-prev,
+.container .content .paging .no-more-next {
+    display: none;
+}
+
+.container .content .paging .num {
+    padding: 0 10px;
+}
+
+.container .content .paging .num .selected {
+    color: #ef2323;
+}
+
+
 @media screen and (max-width: 1070px) {
     .container .content .article-wrapper .article-head-wrapper h2 {
         font-size: 20px;
