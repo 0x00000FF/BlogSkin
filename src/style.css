@@ -279,6 +279,21 @@ a {
     margin: 30px 0;
 
     font-size: 14px;
+	
+	  border-top: 1px solid #000;
+	  border-bottom: 1px solid #000;
+}
+
+.article-body a {
+	  color: #7bd3f7;
+}
+
+.article-body table {
+	margin: 1.5em 0;
+}
+
+.article-body table td {
+	padding: 15px;
 }
 
 .container .sidebar-container {
